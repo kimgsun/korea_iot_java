@@ -3,7 +3,7 @@ package org.example.chapter10;
 // === List 인터페이스 === //
 // List<User> userList = new ArrayList<>();
 
-// 1. 틀징
+// 1. 특징
 // : 순서 유지(인덱스를 통해 정확한 위치 지정 가능), 중복 저장 가능
 // - 저장된 순서에 따라 데이터를 관리하는 다양한 메서드를 지원
 
