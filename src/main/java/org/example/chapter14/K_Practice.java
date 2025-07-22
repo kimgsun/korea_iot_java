@@ -101,11 +101,11 @@ public class K_Practice {
         // Collectors 클래스
         //      - groupingBy
         //      - averaging타입: 해당 타입의 평균을 계산 (averagingInt(각 직원의 급여 전달))
-        Map<String, Double> averageSalaryByDept = employees.stream()
+        Map<String, Double> avgSalaryByDept = employees.stream()
                 .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingInt(Employee::getSalary)));
 
         System.out.println("== 부서별 직원 평균 급여 계산 ==");
-        System.out.println(averageSalaryByDept);
+        System.out.println(avgSalaryByDept);
     }
 
 }
