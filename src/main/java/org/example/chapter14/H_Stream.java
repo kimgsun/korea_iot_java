@@ -168,5 +168,14 @@ public class H_Stream {
         grouped.forEach((length, group) -> {
             System.out.println(length + "글자: " + group);
         });
+
+        // 10)
+        System.out.println("== 같은 이름 그룹화 ==");
+        Map<String, List<String>> groupedName = names.stream()
+                .collect(Collectors.groupingBy(String::toUpperCase));
+
+        groupedName.forEach((key, group) -> {
+            System.out.println(key + ": " + group);
+        });
     }
 }
