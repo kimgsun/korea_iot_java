@@ -77,6 +77,14 @@ public class K_Practice {
         System.out.println("== 부서별 직원 그룹화 ==");
         System.out.println(employeeByDept);
 
+        employeeByDept.forEach((department, employeeInDept) -> {
+            String name = employeeInDept.stream()
+                    .map(Employee::getName)
+                    .collect(Collectors.joining(", "));
+
+        System.out.println(department + ": " + name);
+        });
+
         for (Map.Entry<String, List<Employee>> entry: employeeByDept.entrySet()) {
             String department = entry.getKey();
             List<Employee> employeesInDept = entry.getValue();
@@ -88,14 +96,6 @@ public class K_Practice {
 
             System.out.println();
         }
-
-        employeeByDept.forEach((department, employeeInDept) -> {
-            String name = employeeInDept.stream()
-                    .map(Employee::getName)
-                    .collect(Collectors.joining(", "));
-
-        System.out.println(department + ": " + name);
-        });
 
         // 5. 부서별(그룹화) 평균 급여 계산
         // Collectors 클래스
