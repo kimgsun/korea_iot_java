@@ -82,7 +82,7 @@ public class G_MethodRef {
         // 3. 생성자 메서드 참조
         // 1) 람다 표현식
         Supplier<Person> personLambda1 = () -> new Person("이승아");
-        Supplier<Person> personLambda2 = () -> new Person();
+        // Supplier<Person> personLambda2 = () -> new Person(); >> personLambdaRef
         // 2) 메서드 참조
         // : 매개변수가 없는 생성자일 경우에만 활용 가능
         Supplier<Person> personLambdaRef = Person::new; // 매개변수가 없는 생성자를 호출
