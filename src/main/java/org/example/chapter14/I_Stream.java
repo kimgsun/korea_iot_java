@@ -36,5 +36,6 @@ public class I_Stream {
 
         System.out.println(numbers);
         System.out.println(newNumbers);
+        System.out.println(a);
     }
 }
