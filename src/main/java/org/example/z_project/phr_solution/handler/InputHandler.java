@@ -25,8 +25,15 @@ public class InputHandler {
     }
 
     public static Long getIdInput() {
-        String input = getInput("ID를 입력하세요.");
-        return Long.parseLong(input);
+        while (true) {
+            String input = getInput("ID를 입력하세요.");
+
+            try {
+                return Long.parseLong(input);
+            } catch (NumberFormatException e) {
+                System.out.println("숫자만 입력 가능합니다. 다시 입력해주세요.");
+            }
+        }
     }
 
     // 요청
