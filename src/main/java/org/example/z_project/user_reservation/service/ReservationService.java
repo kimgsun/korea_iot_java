@@ -1,6 +1,6 @@
-package org.example.user_reservation.service;
+package org.example.z_project.user_reservation.service;
 
-import org.example.user_reservation.dto.ReservationResponseDto;
+import org.example.z_project.user_reservation.dto.ReservationResponseDto;
 
 import java.util.List;
 
