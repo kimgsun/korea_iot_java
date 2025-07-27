@@ -2,11 +2,11 @@ package org.example.z_project.phr_solution.handler;
 
 public class MenuPrinter {
     public static void displayMenu() {
-        System.out.println("\n[ 메뉴 선택 ]");
+        System.out.println("\n[ \"메뉴\" 선택 ]"); // [ "메뉴" 선택 ]
         // cf) 이스케이프 문자
-        // : 문자 제어 코드, 문자열 내에서 특수한 기능을 수행하는 문자
-        // - 백슬래시(\)를 사용하여 표현
-        // EX) \n(줄바꿈), \\(\기호 그 자체), \"("기호 그 자체)
+        //  : 문자 제어 코드, 문자열 내에서 특수한 기능을 수행하는 문자
+        //  - 백슬래시(\)를 사용하여 표현
+        //  EX) \n(줄바꿈), \\(\기호 그 자체), \"(" 기호 그 자체)
 
         System.out.println("1. 환자 등록");
         System.out.println("2. 환자 정보 전체 조회");
@@ -20,6 +20,13 @@ public class MenuPrinter {
         System.out.println("9. 건강 기록 삭제");
 
         System.out.println("10. 프로그램 종료");
+
+        // ================ 연습용 예제 =================//
+        System.out.println("== 연습용 문제 ==");
+        System.out.println("11. 진단별 건강 기록 수");
+        System.out.println("12. 연령대별 건강 기록 조회");
+        System.out.println("13. 특정 기간 기록 조회");
+
         System.out.print("메뉴를 선택하세요 >> ");
     }
 }

@@ -1,3 +1,4 @@
+
 package org.example.z_project.phr_solution.entity;
 
 import lombok.AllArgsConstructor;

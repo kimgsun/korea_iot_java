@@ -17,6 +17,7 @@ public class PatientRepository {
         return instance;
     }
 
+
     public void save(Patient patient) {
         // 생성(Create), 수정(Update)가 같은 save 메서드를 사용
         Optional<Patient> existing = findById(patient.getId());
